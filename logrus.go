@@ -184,3 +184,7 @@ type Ext1FieldLogger interface {
 	Trace(args ...interface{})
 	Traceln(args ...interface{})
 }
+
+func init() {
+	fmt.Println("123!!!!!")
+}
